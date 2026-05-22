@@ -60,3 +60,33 @@ This architecture enables **real‑time**, **scalable**, and **fault‑tolerant*
                 |   HDFS (CSV output)   |
                 |  hdfs://master:9000   |
                 +-----------------------+
+
+
+## Project Structure
+
+```
+.
+├── processMulti.py        # Spark Streaming job (distributed inference + HDFS output)
+├── inferenceService.py    # Flask inference API (loads MT5 model once)
+├── sendData.py            # TCP text streamer
+└── README.md
+```
+
+## Requirements
+Python packages (for inference services)
+
+```bash
+pip install flask
+pip install torch
+pip install transformers
+pip install requests
+```
+Spark & Hadoop
+Apache Spark (Standalone cluster mode)
+Hadoop HDFS
+Spark master URL: spark://master:7077
+HDFS namenode: hdfs://master:9000
+
+
+
+
