@@ -1,5 +1,5 @@
 # --------------------------------------------------------------------
-# processMulti.py
+# correctData.py
 # --------------------------------------------------------------------
 # Spark Streaming job that:
 # 1. Reads text lines from a socket (port 9999).
