@@ -16,7 +16,7 @@ The system consists of three main modules:
 2. **inferenceService.py**  
    A Flask API that loads the MT5 model once, runs inference on GPU/CPU, and exposes a `/correct` endpoint.
 
-3. **processMulti.py**  
+3. **correctData.py**  
    A Spark Streaming job that:
    - reads incoming text from the socket  
    - distributes inference requests across multiple inference servers  
