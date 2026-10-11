@@ -38,7 +38,7 @@ This architecture enables **real‑time**, **scalable**, and **fault‑tolerant*
                             v
                 +-----------------------+
                 |  Spark Streaming      |
-                |  processMulti.py      |
+                |  correctData.py      |
                 |  - reads socket       |
                 |  - repartitions RDD   |
                 |  - round‑robin calls  |
