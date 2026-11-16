@@ -66,7 +66,7 @@ This architecture enables **real‑time**, **scalable**, and **fault‑tolerant*
 
 ```
 .
-├── processMulti.py        # Spark Streaming job (distributed inference + HDFS output)
+├── correctData.py        # Spark Streaming job (distributed inference + HDFS output)
 ├── inferenceService.py    # Flask inference API (loads MT5 model once)
 ├── sendData.py            # TCP text streamer
 └── README.md
